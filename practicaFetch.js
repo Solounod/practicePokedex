@@ -29,6 +29,7 @@ function fetchPokemon(name){
 function buttonXerror(div){
     const buttonError = document.createElement('button');
     buttonError.setAttribute('id', key++);
+    buttonError.classList.add('btn');
     buttonError.innerText = 'X';
     div.appendChild(buttonError);
     

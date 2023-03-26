@@ -4,13 +4,14 @@
 
 body{
     display: grid;
-    row-gap: 1rem;
+    row-gap: 10px;
 }
 
 .container-search{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     background-color: #01579b;
+    border-radius: 8px;
     padding: 30px;
 }
 
@@ -28,6 +29,7 @@ body{
     color: #ffffff;
     border-radius: 8px;
     border: #e81f4e;
+    font-weight: 700;
 }
 
 .btn-search:hover{
@@ -38,11 +40,13 @@ body{
 
 .art{
     display: flex;
+    padding-top: 10px;
     background-color: #64dd17;
     height: 70px;
     color: #ffffff;
     border-radius: 16px;
     justify-content: center;
+    font-weight: 600;
     
 }
 .container{
@@ -53,13 +57,79 @@ body{
     
 }
 
+/*Contenedor pokemon*/
 .containerPoke{
+    max-height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 2fr 1fr;
+    row-gap: 10px;
     background-color: #b2ebf2;
     padding: 10px;
-    border: solid 1px;
+    border: 1px solid #ffffff;
     border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(71, 7, 96, 0.7);
 }
 
+.name-poke{
+    background-color: #01579b;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-container{
+    background-color: #01579b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 200px;
+    height: 250px;
+}
+
+.id-container{
+    font-weight: 700;
+}
+
+.cont-habi{
+    background-color: #01579b;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.cont-habi h3{
+    padding-left: 10px;
+}
+
+.cont-habi p{
+    padding-left: 10px;
+}
+
+.cont-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont-btn button{
+    background-color: #00796b;
+    color: #ffffff;
+    font-weight: 800;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+.cont-btn button:hover{
+    background-color: #e81f4e;
+    cursor: pointer;
+}
+
+
+/* ------------ Error handling -----------*/
 .error-search{
     display: grid;
     row-gap: 1rem;
@@ -75,19 +145,34 @@ body{
     grid-row: 100%;
     background-color: red;
     padding: 10px;
-    height: 30px;
+    height: 40px;
     color: white;
     border-radius: 16px;
     justify-content: space-evenly;
+    font-weight: 800;
 }
 
-img{
-    width: 200px;
-    height: 250px;
+.btn{
+    width: 2rem;
+    background-color: #245008;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-weight: 800;
+    cursor: pointer;
 }
+
+
 
 /*-------------------------Info poke----------------------*/
 
 .info-poke{
     display: none;
+
+}
+
+.cont-imgtype{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    column-gap: 10px;
 }
